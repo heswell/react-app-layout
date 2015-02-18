@@ -1,0 +1,280 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../resources/fonts/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+}
+
+html, body {
+	border: 0;
+	margin:0;
+	padding:0;
+	height: 100%;
+	width:100%;
+	overflow:hidden;
+	font-family: calibri;
+}
+
+body, div {
+	-webkit-user-select: none;
+}
+
+canvas.fullscreen {
+	position:absolute;
+	top:0;
+	left:0;
+	visibility:hidden;
+	z-index: 2;
+}
+
+canvas.fullscreen.ready {
+	visibility: visible;
+}
+
+#sketchpad {
+
+	position:absolute;
+	top:0;
+	left:0;
+	border:0;
+	padding:0;
+	margin:0;
+	/*background-color: green;*/
+	visibility:hidden;
+	/*opacity : 0.5;*/
+	z-index:2;
+
+}
+
+
+#sketchpad.sketching {
+	visibility:visible;
+}
+
+.relay-app {
+/*	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+*/	background-color: rgb(180,180,190);
+
+
+}
+
+#rect-surface {
+	position: absolute;
+	top:0;
+	left:0;
+	width:0;
+	height:0;
+	overflow:visible;
+}
+/*
+.rect-layout {
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	-webkit-box-sizing: border-box;
+}
+*/
+.rect-component.rect-container {
+	background-color: inherit;
+
+}
+
+.rect-component {
+	/*border: solid 2px #ccc;*/
+	background-color: white;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.rect-tabset > .rect-inner > section {
+	display: inline-block;
+}
+
+.rect-tabset > .rect-inner {
+	padding : 3px 3px 0 3px;
+	-webkit-box-sizing: border-box;
+	border: solid 2px #ccc;
+	border-bottom: solid 4px #888;
+
+}
+
+.rect-component.minimized > *:not(.header) {
+	display: none;
+}
+
+.rect-component.minimized > header {
+	position: absolute;
+	height: auto;
+	width: auto;
+	padding-left:0;
+}
+
+.rect-terrace > .rect-component.minimized > header {
+	top:0; left:1px; right:1px; bottom:0;
+}
+
+.rect-tower > .rect-component.minimized > header {
+	top:1px; left:0; right:0; bottom:1px;
+}
+
+.rect-terrace > .rect-component.minimized > header > .title {
+	transform: rotate(90deg) translate(60px,0px);
+	transform-origin: 100% 0%;
+}
+
+.rect-terrace > .rect-component.minimized:hover > header > .title {
+	transform: rotate(90deg) translate(30px,-30px);
+	transform-origin: 100% 0%;
+}
+
+.standin {
+
+	-webkit-transition-property: height width;
+	-webkit-transition-duration : .4s;
+	background-color: black;
+
+}
+
+
+
+.rect-Splitter {
+	/*background-color: black;*/
+	border: none;
+	/*-webkit-user-drag: element;*/
+	background-color: blue;
+}
+
+.rect-tower > .rect-Splitter {
+	cursor : ns-resize;
+}
+
+.rect-terrace > .rect-Splitter {
+	cursor : ew-resize;
+}
+
+.rect-Splitter.dragging {
+	background-color: red;
+}
+
+.rect-component > header {
+	display: flex;
+	align-items: stretch;
+	padding-left: 6px;
+	height:32px;
+	line-height:32px;
+	background-color: black;
+	color:white;
+}
+
+.rect-component > header > .title {
+	flex : 1 1 auto;
+	white-space: nowrap;
+}
+
+.rect-component > header button {
+	flex : 0 0 32px;
+}
+
+.rect-layout.dragging {
+	cursor : default;
+	border : dashed 3px red;
+	z-index : 5;
+}
+
+.rect-layout.navbar {
+	margin:0;
+}
+
+
+.rect-tabstrip {
+	height : 34px;
+}
+
+
+.rect-tabstrip > .rect-inner-sleeve {
+    position:absolute;
+    top:0;
+    left:0;
+    width : 100%;
+    bottom: 3px;
+    overflow:hidden;
+    -webkit-transition: all .4s linear;
+}
+
+.rect-tabstrip > .rect-inner-sleeve > .rect-inner {
+    display: inline-block;
+    padding : 3px 0 0 0;
+    margin:0;
+    height: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    -webkit-box-sizing: border-box;
+}
+
+.rect-tabstrip > .rect-inner-sleeve > .rect-inner.smooth-slide {
+    -webkit-transition: -webkit-transform .4s ease-out;
+
+}
+
+.rect-tabstrip .rect-tab {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+     margin-left:3px;
+     height: 100%;
+}
+
+
+.rect-tabstrip .rect-tab > .rect-tab-caption {
+    text-decoration: none;
+    padding: 3px 6px;
+    border-radius: 8px 8px 0 0;
+    border: solid 1px #ccc;
+    border-bottom:none;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow:hidden;
+    margin-left: -1px;
+    height: 100%;
+    line-height: 34px;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: background-color .4s linear;
+}
+
+
+.rect-tabstrip  .rect-tab:not(.active) > .rect-tab-caption {
+    background: #ccc;
+    color: white;
+}
+
+.rect-tabstrip .rect-tab.active .rect-tab-caption {
+    background: white;
+}
+
+.rect-tabstrip .rect-inner.resizeable .rect-tab {
+    -webkit-transition: width .4s linear;
+}
+
+
+
+ 

@@ -1,0 +1,68 @@
+{
+    "type" : "Tabs", 
+    "$size" : {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+    "title" : "The Real Stuff", 
+    "className" : "main-tabs",
+    "dragContainer": true,
+    "activeTab" : 1, 
+    "content" : [
+        {
+            "type": "Component", "title": "Test 4.A", "bg" : "cornflowerblue",
+            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+        },
+        {
+            "type" : "FlexBox", "flexOrientation": "row", "title": "Main Tab",
+            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+            "content" : [
+                {
+                    "type" : "Tabs",
+                    "activeTab" : 0,
+                    "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                    "content" : [
+                        {
+                            "type": "Component1", "title": "Teat 6.A",
+                            "style" : {"backgroundColor": "rgb(142, 68, 173)"},
+                            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                        },
+                        {
+                            "type": "Component1", "title": "Test 6.B",
+                            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                        }
+                    ]
+                },
+                {
+                    "type": "Component1", "title": "Teat 2.A.1",
+                    "style" : {"backgroundColor": "rgb(22, 160, 133)"},
+                    "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                },
+                {
+                    "type": "Component1", "title": "Test 2.A.2", "bg": "olive",
+                    "style" : {"backgroundColor": "rgb(52, 73, 94)"},
+                    "$size" : {"flexShrink":1,"flexGrow":0,"flexBasis":100}
+
+                },
+                {
+                    "type" : "FlexBox", "flexOrientation": "column",
+                    "$size" : {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                    "content" : [
+                        {
+                            "type": "Component1", "title": "Test 2.B", "bg": "olive", "text": "Jimmy",
+                            "style" : {"backgroundColor": "rgb(192, 57, 43)"},
+                            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                        },
+                        {
+                            "type": "Component1", "title": "Test 2.C", "bg": "brown",
+                            "style" : {"backgroundColor": "rgb(241, 196, 15)"},
+                            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Component1", "title": "Test 4.C", "bg": "brown",
+            "$size": {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+        }
+    ]
+}
+

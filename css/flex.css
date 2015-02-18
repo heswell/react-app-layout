@@ -1,0 +1,56 @@
+.rect-tower, .rect-terrace , .rect-tabset, .rect-stack {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    align-items: stretch;}
+
+.rect-tower, .rect-tabset, .rect-stack {
+    flex-direction: column;
+}
+
+.rect-container {
+    overflow:hidden;
+}
+
+.rect-terrace {
+    flex-direction: row;
+}
+
+.rect-tower > .rect-layout, .rect-terrace > .rect-layout, .rect-tabset > .rect-layout {
+    flex: 1 1 auto;
+}
+
+.rect-tabset > .rect-tabstrip {
+    flex-grow : 0;
+    flex-shrink: 0;
+}
+
+.rect-tabset > .rect-layout.active {
+    flex: 1 1 1 !important;
+}
+
+.rect-tabset > .rect-component.active > header .title {
+    display:none;
+}
+
+.rect-tabset > .rect-layout:not(.active):not(.rect-tabstrip) {
+    flex: 0 0 0 !important;
+    visibility:hidden;
+}
+
+.rect-tower > .rect-layout {
+    min-height: 0;
+}
+
+.rect-terrace > .rect-layout {
+    min-width: 0;
+}
+
+.rect-tabset > .rect-tabstrip {
+    position:relative;
+}
+
+.rect-Splitter {
+    flex: 0 0 6px;
+}
+

@@ -1,0 +1,93 @@
+.main-tabs > .rect-tabstrip {
+	height: 40px;
+}
+
+.main-tabs .rect-tabstrip .rect-tab > .rect-tab-caption {
+	line-height: 36px;
+}
+
+.rect-tabstrip > .rect-inner-sleeve {
+	bottom:0;
+}
+
+.rect-tabstrip > .rect-inner-sleeve > .rect-inner {
+	padding:0;
+}
+
+.rect-tabstrip .rect-tab {
+	margin:0;
+}
+
+.rect-tabstrip .rect-tab > .rect-tab-caption {
+	border-radius: 0;
+	padding: 0 6px;
+}
+
+
+.main-tabs > .rect-tabstrip {
+	background-color: rgb(97, 103, 165);
+}
+
+
+.rect-tabstrip  .rect-tab:not(.active) > .rect-tab-caption {
+    background-color: transparent;
+    color: white;
+}
+
+.main-tabs > .rect-tabstrip .rect-tab.active .rect-tab-caption {
+    background-color: rgba(255,255,255,0.45);
+}
+
+.rect-tabstrip .rect-tab.active .rect-tab-caption {
+    background-color: #1a4e95;
+    color: white;
+}
+
+
+
+.rect-component {
+	background-color: #3468af;
+}
+.rect-component > header {
+	background-color: #1a4e95;
+}
+
+.rect-Splitter {
+	background-color: rgb(26,78,149);
+}
+
+button[class^="icon-"], button[class*=" icon-"] {
+	border:none;
+	padding:0;
+	width: 32px;
+	height: 32px;
+	color: rgb(120,120,120);
+	font-size:24px;
+	background-color: rgba(0,0,0,0);
+}
+
+button[class^="icon-"]:hover, button[class*=" icon-"]:hover {
+	color: white;
+	background-color: rgba(255,255,255,.1);
+}
+
+.rect-component > header button {
+	display:none;
+}
+
+.rect-component:hover > header button {
+	display: block;
+}
+
+.rect-component > header span[class^="icon-"] {
+	display:inline-block;
+	width: 20px;
+	height: 32px;
+	line-height: 32px;
+	font-size:12px;
+	color:gold;
+}
+
+.rect-component.fixed > header span[class^="icon-pushpin"] {
+
+}

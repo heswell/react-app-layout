@@ -1,0 +1,42 @@
+{
+    "type" : "Tower",
+    
+    "children" : [
+        {
+            "type": "Component", "title": "Teat 1", "flex" : true
+        },
+
+        {
+            "type" : "Tabs",
+            "children" : [
+                {
+                    "type": "Component", "title": "Teat 4.A", "bg" : "cornflowerblue", "flex": true
+                },
+                {
+                    "type": "Component", "title": "Test 4.B", "bg": "olive", "flex": true
+                },
+                {
+                    "type": "Component", "title": "Test 4.C", "bg": "brown", "flex": true
+                }
+            ]
+        },
+        
+        {
+            "type" : "Terrace",
+            "children" : [
+                {
+                    "type": "Component", "title": "Teat 2.A", "bg" : "cornflowerblue", "flex": true
+                },
+                {
+                    "type": "Component", "title": "Test 2.B", "bg": "olive", "flex": true
+                },
+                {
+                    "type": "Component", "title": "Test 2.C", "bg": "brown", "flex": true
+                }
+            ]
+        },
+        {
+            "type": "Component", "title": "Test 3", "bg":"coral", "flex": true
+        }
+    ]
+}

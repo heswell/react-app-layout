@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../resources/icomoon.woff?5pdklg') format('woff'),
+		url('fonts/icomoon.ttf?5pdklg') format('truetype'),
+		url('fonts/icomoon.svg?5pdklg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e601";
+}
+
+.icon-pushpin:before {
+	content: "\e600";
+}
+
+.icon-undo:before {
+	content: "\e602";
+}
+
+.icon-redo:before {
+	content: "\e603";
+}
+
+.icon-forward:before {
+	content: "\e604";
+}
+
+.icon-reply:before {
+	content: "\e605";
+}
+
+.icon-user:before {
+	content: "\e606";
+}
+
+.icon-user2:before {
+	content: "\e607";
+}
+
+.icon-search:before {
+	content: "\e608";
+}
+
+.icon-expand:before {
+	content: "\e609";
+}
+
+.icon-contract:before {
+	content: "\e60a";
+}
+
+.icon-expand2:before {
+	content: "\e60b";
+}
+
+.icon-contract2:before {
+	content: "\e60c";
+}
+
+.icon-lock:before {
+	content: "\e60d";
+}
+
+.icon-unlocked:before {
+	content: "\e60e";
+}
+
+.icon-cog:before {
+	content: "\e60f";
+}
+
+.icon-menu:before {
+	content: "\e610";
+}
+
+.icon-cancel-circle:before {
+	content: "\e611";
+}
+
+.icon-plus:before {
+	content: "\e612";
+}
+
+.icon-arrow-up:before {
+	content: "\e61d";
+}
+
+.icon-arrow-right:before {
+	content: "\e61e";
+}
+
+.icon-arrow-down:before {
+	content: "\e61f";
+}
+
+.icon-arrow-left:before {
+	content: "\e620";
+}
+
+.icon-checkbox-checked:before {
+	content: "\e613";
+}
+
+.icon-checkbox-unchecked:before {
+	content: "\e614";
+}
+
+.icon-checkbox-partial:before {
+	content: "\e615";
+}
+
+.icon-radio-checked:before {
+	content: "\e616";
+}
+
+.icon-radio-unchecked:before {
+	content: "\e617";
+}
+
+.icon-filter:before {
+	content: "\e618";
+}
+
+.icon-paragraph-left:before {
+	content: "\e619";
+}
+
+.icon-paragraph-center:before {
+	content: "\e61a";
+}
+
+.icon-paragraph-right:before {
+	content: "\e61b";
+}
+
+.icon-paragraph-justify:before {
+	content: "\e61c";
+}
+

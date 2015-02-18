@@ -1,0 +1,20 @@
+{
+  "name": "react-app-layout",
+  "version": "0.0.0",
+  "description": "React Layout",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heswell/react-app-layout.git"
+  },
+  "author": "steve@heswell.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heswell/react-app-layout/issues"
+  },
+  "homepage": "https://github.com/heswell/react-app-layout",
+  "dependencies": {
+    "react" : "12.*",
+    "react-tools" : "12.*"
+  }
+}

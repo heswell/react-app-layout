@@ -1,2 +1,2 @@
-# react-app-layout
-Application Layout for React
+react-app-layout
+======

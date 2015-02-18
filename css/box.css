@@ -1,0 +1,44 @@
+.rect-tower, .rect-terrace, .rect-tabset {
+    display: -webkit-box;
+    -webkit-align-items: stretch;
+}
+
+.rect-tower, .rect-tabset {
+    -webkit-box-orient : vertical;
+}
+
+.rect-terrace {
+   -webkit-box-orient: horizontal;
+ }
+
+.rect-tower > .rect-layout, .rect-terrace > .rect-layout, .rect-tabset > .rect-layout {
+    position: relative; 
+    top:auto;
+    left:auto;
+    right:auto;
+    bottom:auto;
+   -webkit-box-flex:1;   
+}
+
+.rect-tower > .rect-layout, .rect-tabset > .rect-layout {
+    min-height: 0;
+}
+
+.rect-terrace > .rect-layout {
+    min-width: 0;
+     /* bug in the old flexbox causes children of 'stretch' element to have height 
+        computed incorrectly when used as child of rect-terrace. Fixed in new flexbox */
+     /*height:100%;*/
+     /*
+        took this out again - seems to have fixed itself in chrome and now the 100% fix here breaks layout
+     */
+}
+
+.rect-terrace > .rect-layout.minimized {
+    width : 20px;
+   -webkit-box-flex:0;       
+}
+
+.rect-tower > .no-flex.rect-layout, .rect-terrace > .no-flex.rect-layout, .rect-tabset > .no-flex.rect-layout {
+   -webkit-box-flex:0;   
+}

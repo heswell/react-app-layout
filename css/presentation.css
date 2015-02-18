@@ -1,0 +1,173 @@
+.root.rect-layout {
+
+}
+
+.rect-leo-redeye {
+	background-color: lightcoral;
+	border-color:blue;
+	border-width : 2px;
+}
+
+.rect-leo-bluey {
+	background-color: lightsteelblue;
+}
+
+.rect-leo-goldenrod {
+	background-color: palegoldenrod;
+}
+
+.rect-leo-noirby {
+    background-color: navy;
+}
+
+.rect-leo-whitey {
+    background-color: pink;
+}
+
+
+.toolbar {
+	background-color: black;
+}
+
+.drop-target.rect-component {
+
+    /*background-color: cyan;*/
+}
+
+
+.DropMenu {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	overflow: visible;
+	z-index: 10;
+}
+
+
+
+.drop-menu-item {
+	position: absolute;
+	cursor: pointer;
+}
+
+.drop-menu-item {
+	border-radius: 7px;
+	cursor: default;
+	padding:0;
+	left: 2px;
+}
+
+
+
+/*.drop-menu-item.west { border-left: solid yellow 6px;}
+.drop-menu-item.south {border-bottom: solid yellow 6px;}
+.drop-menu-item.north {border-top: solid yellow 6px;}
+.drop-menu-item.east {border-right: solid yellow 6px;}
+*/
+.drop-menu-item:nth-child(1){ background-color: rgb(140,140,140);border: solid yellow 4px; left:0; border-radius: 10px;} 
+.drop-menu-item:nth-child(2){ background-color: rgb(130,130,130);} 
+.drop-menu-item:nth-child(3){ background-color: rgb(120,120,120);} 
+.drop-menu-item:nth-child(4){ background-color: rgb(110,110,110);} 
+
+.drop-menu-item:last-child:not(.hover){
+	border-left:none;
+}
+
+.drop-menu-item.hover {
+	background-color: yellow;
+}
+
+.drop-menu-item.hover + .drop-menu-item {
+	border-left: none;
+}
+
+.PlaceHolder {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+
+.PlaceHolder .close {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+}
+
+.rect-tower > .rect-component > .PlaceHolder .close {
+	left : calc(50% - 16px);
+}
+
+.rect-terrace > .rect-component > .PlaceHolder .close {
+	top : calc(50% - 16px);
+}
+
+.rect-tower > .rect-component:first-child > .PlaceHolder .close {	bottom:0;} 
+.rect-tower > .rect-component:last-child  > .PlaceHolder .close { top:0;} 
+.rect-terrace > .rect-component:first-child > .PlaceHolder .close {	right:-2px;} 
+.rect-terrace > .rect-component:not(:first-child) > .PlaceHolder .close { left:0;} 
+
+.rect-container > .rect-component > .PlaceHolder .close > span {
+	position: absolute;
+	font-size: 16px;
+	color: white;
+	cursor:pointer;
+}
+
+.rect-container > .rect-component > .PlaceHolder .close > span:hover {
+	text-decoration: underline;
+}
+
+.rect-container > .rect-component > .PlaceHolder .close:before {
+	color: rgb(26,78,149);
+	font-size: 30px;
+	position: absolute;
+	left: 0
+}
+
+.rect-tower > .rect-component:first-child > .PlaceHolder .close > span { top: -18px;	left: -6px; }
+.rect-tower > .rect-component:not(:first-child) > .PlaceHolder .close > span { bottom: -15px; left: -6px;}
+.rect-terrace > .rect-component:first-child > .PlaceHolder .close > span { top: 6px;	right: 36px; }
+.rect-terrace > .rect-component:not(:first-child) > .PlaceHolder .close > span { top: 6px; left: 36px;}
+
+
+.rect-tower > .rect-component:first-child > .PlaceHolder .close:before {	content: "\e61d";	bottom:0; } 
+.rect-tower > .rect-component:not(:first-child) > .PlaceHolder .close:before { content: "\e61f"; top:0; } 
+.rect-terrace > .rect-component:first-child > .PlaceHolder .close:before { content: "\e620";	right:0; } 
+.rect-terrace > .rect-component:not(:first-child) > .PlaceHolder .close:before { content: "\e61e"; left:0; } 
+
+.rect-component > header + div {
+	position: absolute;
+	top:32px;
+	left:0;
+	right:0;
+	bottom:0;
+	box-sizing: border-box;
+}
+
+.LayoutItem {
+	overflow: hidden;
+}
+
+.ComponentPalette {
+	background-color: black;
+	padding: 6px 6px 6px 0;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.ComponentPalette .ComponentIcon {
+	display: inline-block;
+	border: solid 4px rgba(200,200,200,0.4);
+	border-radius: 3px;
+	color: black;
+	font-size: 14px;
+	font-weight:bold;
+	margin-left: 6px;
+	line-height: 20px;
+	padding: 0 6px;
+	cursor:pointer;
+}
+
+

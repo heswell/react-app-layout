@@ -1,0 +1,86 @@
+{
+    "type" : "FlexBox", 
+    "flexOrientation": "column",
+    "layout" : [
+        {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+        {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+        {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+        {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+    ],
+    "content" : [
+        {
+            "type": "Component", "title": "Test 1", "bg": "ivory"
+        },
+
+        {
+            "type" : "Tabs",
+            "layout" : [
+                {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                {"flexShrink":0,"flexGrow":0,"flexBasis":0},
+                {"flexShrink":0,"flexGrow":0,"flexBasis":0}
+            ],
+            "content" : [
+                {
+                    "type": "Component", "title": "Teat 4.A", "bg" : "cornflowerblue"
+                },
+                {
+                    "type": "Component", "title": "Test 4.B", "bg": "olive"
+                },
+                {
+                    "type": "Component", "title": "Test 4.C", "bg": "brown"
+                }
+            ]
+        },
+        
+        {
+            "type" : "FlexBox", "flexOrientation": "row",
+            "layout" : [
+                {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                {"flexShrink":1,"flexGrow":0,"flexBasis":100},
+                {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+            ],
+            "content" : [
+                {
+                    "type" : "Tabs",
+                    "layout" : [
+                        {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                        {"flexShrink":0,"flexGrow":0,"flexBasis":0}
+                    ],
+                    "content" : [
+                        {
+                            "type": "Component", "title": "Teat 6.A", "bg" : "cornflowerblue"
+                        },
+                        {
+                            "type": "Component", "title": "Test 6.B", "bg": "palegoldenrod"
+                        }
+                    ]
+                },
+                {
+                    "type": "Component", "title": "Teat 2.A", "bg" : "cornflowerblue"
+                },
+                {
+                    "type": "Component", "title": "Test 2.B", "bg": "olive"
+                },
+                {
+                    "type" : "FlexBox", "flexOrientation": "column",
+                    "layout" : [
+                        {"flexShrink":1,"flexGrow":1,"flexBasis":1},
+                        {"flexShrink":1,"flexGrow":1,"flexBasis":1}
+                    ],
+                    "content" : [
+                        {
+                            "type": "Component", "title": "Test 2.B", "bg": "olive"
+                        },
+                        {
+                            "type": "Component", "title": "Test 2.C", "bg": "brown"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Component", "title": "Test 3", "bg":"coral"
+        }
+    ]
+}
